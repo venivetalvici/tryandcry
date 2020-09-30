@@ -1,6 +1,15 @@
 package Day17;
 public class cesar {
 
+
+
+    public static void main(String[] args) {
+        String message = "съешь же ещё этих мягких французских булок, да выпей чаю";
+        String codeMessage = enigmaCaesar(message, 3);
+        System.out.println(message + " получается " + codeMessage);
+        String deCodeMessage = enigmaCaesar(codeMessage, -3);
+        System.out.println(codeMessage + " получается " + deCodeMessage);
+    }
     private static String enigmaCaesar(String phrase, int key) {
         StringBuilder strBox = new StringBuilder(phrase.length());
         char tmp;
@@ -16,13 +25,5 @@ public class cesar {
             strBox.append(tmp);
         }
         return strBox.toString();
-    }
-
-    public static void main(String[] args) {
-        String message = "съешь же ещё этих мягких французских булок, да выпей чаю";
-        String codeMessage = enigmaCaesar(message, 3);
-        System.out.println(message + " -> " + codeMessage);
-        String deCodeMessage = enigmaCaesar(codeMessage, -3);
-        System.out.println(codeMessage + " -> " + deCodeMessage);
     }
 }
