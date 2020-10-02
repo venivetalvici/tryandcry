@@ -1,6 +1,6 @@
 package HomeWork;
 
-public class ternar {
+public class ternar1 {
     public static void main(String[] args) {
         System.out.println(getMeMax(15, 5)); //→ 15
         System.out.println(getMeMax(4, 16)); //→ 16
