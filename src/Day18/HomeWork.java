@@ -22,14 +22,13 @@ public class HomeWork {
         System.out.println("Длинна рабочего участка: " + longarea + " метра");
         double squarearea = widtharea * longarea; // считаем площадь в метрах квадратных
         Scanner input3 = new Scanner(System.in);
-        System.out.println("Какая ширина плитки? ");// получаем ширину в сантиметрах не квадратных
+        System.out.println("Какая ширина плитки (пока что в метрах)? ");// получаем ширину в метрах не квадратных
         double widthtile = input3.nextDouble();
         Scanner input4 = new Scanner(System.in);
-        System.out.println("Какая длинна плитки? ");// получаем ширину в сантиметрах не квадратных
+        System.out.println("Какая длинна плитки(пока что в метрах)? ");// получаем ширину в метрах не квадратных
         double longtile = input4.nextDouble();
         double squaretile = widthtile * longtile;//считаем площадь плитки
         Scanner input5 = new Scanner(System.in);
-
         System.out.println("Как будем класть плитку? Вдоль или поперек? ");
         String metod = input5.nextLine();
         if (metod.equals("вдоль")) {
